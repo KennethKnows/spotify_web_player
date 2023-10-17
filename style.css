@@ -1,0 +1,119 @@
+body {
+    background-image: url("https://a.storyblok.com/f/155294/1920x1080/51e13d3ead/100.png/m/");
+    background-size: cover bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+      }
+.player-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.548);
+        width: 250px;
+        height: 400px;
+        backdrop-filter: blur(10px) brightness(100%);
+        border-radius: 15px;
+        box-shadow: 3px 3px 5px #000000a8;
+      }
+      
+.album-cover {
+        display: flex;
+        align-items: center;
+        height: 130px;
+        width: 200px;
+        margin: 30px;
+        position: relative;
+        top: 8px;
+    
+      }
+.taylor {
+        height: 130px;
+        width: 130px;
+        background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2021%2F11%2F11%2FTaylor-Swift-Red.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+      }
+.disc {
+        background-image: url(https://www.graphicsfuel.com/wp-content/uploads/2012/01/vinyl-record-disc-512.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        top: 5px;
+        right: 25px;
+      }
+      
+.track-name {
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.artist-name {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+
+}
+
+#song-details {
+    margin: 10px 0;
+}
+#progress {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 6px;
+  background: #f53192;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #f53192;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 4px 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls div {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #f53192;
+  box-shadow: 0 10px 20px 2rgba(255, 26, 26, 0.22);
+  cursor: pointer;
+}
+.controls div:nth-child(2){
+  transform: scale(0.8);
+  background: #f53192;
+  color: #fff;
+}
